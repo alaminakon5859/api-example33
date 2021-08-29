@@ -2,6 +2,9 @@ const searchFood=()=> {
     const searchfield =document.getElementById("search-field"); 
     searchfieldtex = searchfield.value ;
     searchfield.value="";
+      // search korar sathe input er lekha chole jabe
+
+    
     if(searchfieldtex==""){
       // not found
     }
@@ -25,6 +28,7 @@ const displaysearchresult=(meals)=> {
     // console.log(meals);
     const searchresult =document.getElementById("search-result");
     searchresult.innerHTML="";
+    // mane onno image search korar sathe ager image chole jabe
 
     if(meals.length==0){
         // tahole dhakabo na emon kico
@@ -64,6 +68,7 @@ const displaymealdetailes =(meal)=> {
      const mealdetails =document.getElementById("meal-details");
 
      mealdetails.textContent="";
+     // mane onno image search korar sathe ager mealdetailes  chole jabe
   
      const div =document.createElement("div");
      div.classList.add("card");
